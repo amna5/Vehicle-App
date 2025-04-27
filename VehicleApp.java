@@ -1,5 +1,6 @@
 public class VehicleApp {
     public static void main(String[] args) {
+
         // Create cars
         Car car1 = new Car("Toyota", "Camry", 2023, 4);
         Car car2 = new Car("Honda", "Civic", 2022, 2);
@@ -26,6 +27,6 @@ public class VehicleApp {
         bike1.decelerate(30);
         bike1.stop();
 
-        System.out.println("\nNumber of vehicles created: " + Vehicle.numberOfVehicles);
+        System.out.println("\nNumber of vehicles created: " + Vehicle.Counter.getCount());
     }
 }

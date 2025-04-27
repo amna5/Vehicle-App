@@ -12,10 +12,12 @@ public abstract class LandVehicle implements Vehicle {
         this.make = make;
         this.model = model;
         this.year = year;
-        this.speed = 0;
-        this.isMoving = false;
+        this.speed = 0; // default value
+        this.isMoving = false; // default value
+        Vehicle.Counter.increment(); // keep track of vehicles created
     }
 
+    // method to start the car
     @Override
     public void start() {
         if (!isMoving) {
@@ -26,6 +28,7 @@ public abstract class LandVehicle implements Vehicle {
         }
     }
 
+    // method to stop the car
     @Override
     public void stop() {
         if (isMoving) {
@@ -37,6 +40,7 @@ public abstract class LandVehicle implements Vehicle {
         }
     }
 
+    // method to accelerate the car based on speed provided
     @Override
     public void accelerate(double speed) {
         if (isMoving) {
@@ -47,6 +51,7 @@ public abstract class LandVehicle implements Vehicle {
         }
     }
 
+    // method to decelerate car based on speed provided
     @Override
     public void decelerate(double speed) {
         if (isMoving) {
