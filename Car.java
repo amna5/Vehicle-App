@@ -12,7 +12,7 @@ public class Car extends LandVehicle {
     }
 
     // set whether the car has air conditioner or not
-    void setAirConditioner(boolean hasAirConditioner) {
+    public void setAirConditioner(boolean hasAirConditioner) {
         this.hasAirConditioner = hasAirConditioner;
         System.out.println(make + " " + model + " air conditioner: " + (hasAirConditioner ? "ON" : "OFF"));
     };
