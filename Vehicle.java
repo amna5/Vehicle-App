@@ -18,12 +18,12 @@ public interface Vehicle {
     }
 
     // all methods are implicitly public and abstract
-    void start();
+    public void start();
 
-    void stop();
+    public void stop();
 
-    void accelerate(double speed);
+    public void accelerate(double speed);
 
-    void decelerate(double speed);
+    public void decelerate(double speed);
 
 }
