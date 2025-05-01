@@ -4,7 +4,7 @@ public interface Vehicle {
     class Counter {
 
         // declare a static variable to track number of vehicles created
-        private static int numberOfVehicles;
+        private static int numberOfVehicles = 0;
 
         // increase number of vehicles created by 1
         public static void increment() {
