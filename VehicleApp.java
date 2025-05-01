@@ -1,21 +1,21 @@
-public class VehicleApp {
-    public static void main(String[] args) {
+public class VehicleApp { // create class
+    public static void main(String[] args) { // starting point of code execution
 
-        // Create cars
+        // create car objects from Car class and initializing
         Car car1 = new Car("Toyota", "Camry", 2023, 4);
         Car car2 = new Car("Honda", "Civic", 2022, 2);
 
-        // Create motorcycles
+        // create bike object from Motorcycle class and initializing
         Motorcycle bike1 = new Motorcycle("Yamaha", "YZF-R1", 2024);
         Motorcycle bike2 = new Motorcycle("Kawasaki", "Ninja 650", 2023);
 
-        // Set additional properties
+        // set additional properties using <object name>.<method name>
         car1.setAirConditioner(true);
         car2.setAirConditioner(false);
         bike1.setHelmet(true);
         bike2.setHelmet(false);
 
-        // Demonstrate vehicle operations
+        // demonstrate vehicle operations <object name>.<method name>
         System.out.println("\n--- Operating Vehicles ---");
         car1.start();
         car1.accelerate(50);
@@ -27,6 +27,9 @@ public class VehicleApp {
         bike1.decelerate(30);
         bike1.stop();
 
+        // get back the number of vehicles created using <interface name>.<class
+        // name>.<method name>
         System.out.println("\nNumber of vehicles created: " + Vehicle.Counter.getCount());
-    }
-}
+
+    } // end main method
+} // end class

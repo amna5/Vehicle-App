@@ -1,3 +1,4 @@
+// Car class as the blueprint to make car objects
 public class Car extends LandVehicle {
 
     // declare variables
@@ -26,4 +27,4 @@ public class Car extends LandVehicle {
         return hasAirConditioner;
     }
 
-}
+} // end class

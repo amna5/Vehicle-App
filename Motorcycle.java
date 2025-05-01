@@ -1,4 +1,5 @@
-public class Motorcycle extends LandVehicle {
+// Motorcycle class as the blueprint to make motorcycle objects
+public class Motorcycle extends LandVehicle { // create class and inherit LandVehicle class
 
     // declare variable
     private boolean hasHelmet;
@@ -19,4 +20,4 @@ public class Motorcycle extends LandVehicle {
     public boolean hasHelmet() {
         return hasHelmet;
     }
-}
+} // end class
