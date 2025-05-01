@@ -1,7 +1,7 @@
 public interface Vehicle {
 
     // class for counting vehicles created
-    class Counter {
+    public static class Counter {
 
         // declare a static variable to track number of vehicles created
         private static int numberOfVehicles = 0;
