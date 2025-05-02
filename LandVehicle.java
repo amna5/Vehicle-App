@@ -7,6 +7,8 @@ public abstract class LandVehicle implements Vehicle { // create class and imple
     protected int year;
     protected double speed;
     protected boolean isMoving;
+    // keep track of number of vehicles
+    protected static int numberOfVehicles = 0;
 
     // LandVehicle constructor
     LandVehicle(String make, String model, int year) {
@@ -15,7 +17,8 @@ public abstract class LandVehicle implements Vehicle { // create class and imple
         this.year = year;
         this.speed = 0; // default value
         this.isMoving = false; // default value
-        Vehicle.Counter.increment(); // keep track of vehicles created
+        // increase number of vehicles by 1 everytime and object is created
+        numberOfVehicles++;
     }
 
     // method to start the vehicle
@@ -63,6 +66,11 @@ public abstract class LandVehicle implements Vehicle { // create class and imple
         } else { // otherwise user will be notified that the car is not moving
             System.out.println("Vehicle is not moving.");
         }
+    }
+
+    // method to get the number of vehicles
+    public static int getNumberOfVehicles() {
+        return numberOfVehicles;
     }
 
 } // end class
