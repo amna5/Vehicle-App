@@ -2,6 +2,7 @@
 public abstract class LandVehicle implements Vehicle { // create class and implement Vehicle interface
 
     // use protected so it can only be accessed by subclasses
+    // common properties shared by all land vehicles
     protected String make;
     protected String model;
     protected int year;
@@ -9,6 +10,16 @@ public abstract class LandVehicle implements Vehicle { // create class and imple
     protected boolean isMoving;
     // keep track of number of vehicles
     protected static int numberOfVehicles = 0;
+
+    /**
+     * Constructor initializes common vehicle attributes.
+     * This class is declared abstract because it represents a general concept
+     * (LandVehicle),
+     * and we do not want to instantiate it directly — only its subclasses like Car
+     * or Motorcycle.
+     * Even though there are no abstract methods, the class serves as a base class
+     * with shared implementation.
+     */
 
     // LandVehicle constructor
     LandVehicle(String make, String model, int year) {
