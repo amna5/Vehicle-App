@@ -23,9 +23,9 @@ public abstract class LandVehicle implements Vehicle { // create class and imple
 
     // LandVehicle constructor
     LandVehicle(String make, String model, int year) {
-        this.make = make;
-        this.model = model;
-        this.year = year;
+        this.make = make; // assigns parameter 'make' to the instance variable 'make'
+        this.model = model; // assigns parameter 'model' to the instance variable 'model'
+        this.year = year; // assigns parameter 'year' to the instance variable 'year'
         this.speed = 0; // default value
         this.isMoving = false; // default value
         // increase number of vehicles by 1 everytime and object is created
