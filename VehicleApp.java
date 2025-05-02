@@ -21,12 +21,12 @@ public class VehicleApp { // create class
         car1.accelerate(50);
         car1.decelerate(20);
         car1.stop();
-        System.out.println();
+        System.out.println(); // print blank line for clarity
         car2.start();
         car2.accelerate(60);
         car2.decelerate(30);
         car2.stop();
-        System.out.println(); // print blank line for clarity
+        System.out.println();
         bike1.start();
         bike1.accelerate(80);
         bike1.decelerate(30);
@@ -37,9 +37,9 @@ public class VehicleApp { // create class
         bike2.decelerate(40);
         bike2.stop();
 
-        // get back the number of vehicles created using <interface name>.<class
-        // name>.<method name>
+        // get back the number of vehicles created using <class name>.<method name>
         System.out.println("\nNumber of vehicles created: " + LandVehicle.getNumberOfVehicles());
 
     } // end main method
+
 } // end class
