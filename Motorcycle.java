@@ -20,4 +20,5 @@ public class Motorcycle extends LandVehicle { // create class and inherit LandVe
     public boolean hasHelmet() {
         return hasHelmet;
     }
+
 } // end class
